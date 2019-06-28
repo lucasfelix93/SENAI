@@ -1,0 +1,19 @@
+//Faça um algoritmo que peça ao usuário 10 números e mostre posteriormente quantos
+//são pares e a soma deles, bem como quantos são ímpares e a soma deles.
+
+import javax.swing.JOptionPane;
+public class Exercício03 {
+
+	public static void main(String[] args) {
+		int cont = 1;
+		String msgNumero = "Insira o " + cont + "º valor: "; 
+		
+		int valorInformado = Integer.parseInt(msgNumero);
+		//for (cont=1; cont<=10; cont++);
+
+		
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double totalCompras = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor da compra: "));
+		int qtdParcelas = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de parcelas: "));
+		
+		String msgTotalCompras = "O valor total das compras foi de RS";
+		String msgValorParcelas = "O valor de cada parcela é de RS";
+		
+		double valorParcelas = totalCompras/qtdParcelas;
+		
+		
+		JOptionPane.showMessageDialog(null, msgTotalCompras, "Resumo da compra", JOptionPane.INFORMATION_MESSAGE, totalCompras);
+		JOptionPane.showMessageDialog(null, msgValorParcelas, "Parcelas", JOptionPane.INFORMATION_MESSAGE);
+
+
+	}
+
+}

@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int qtdMaca = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de maçãs que deseja levar"));
+		double valorMaca = 0;
+		double custoTotal = qtdMaca*valorMaca;
+		String msgCusto = "O valor total da compra foi de R$" + custoTotal;		
+		if (qtdMaca>12) {
+			valorMaca = 1.30;
+		}else valorMaca = 1.00;
+		
+		JOptionPane.showMessageDialog(null,custoTotal, "Custo total ", JOptionPane.INFORMATION_MESSAGE);
+		
+
+	}
+
+}

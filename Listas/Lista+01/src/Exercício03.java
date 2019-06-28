@@ -1,0 +1,31 @@
+
+//Faça um algoritmo que peça ao usuário 10 números e mostre posteriormente quantos
+//são pares e a soma deles, bem como quantos são ímpares e a soma deles.
+
+import javax.swing.JOptionPane;
+
+public class Exercício03 {
+
+	public static void main(String[] args) {
+		int qntPar = 0;
+		int somaPar = 0;
+		int qntImpar = 0;
+		int somaImpar = 0;
+		
+
+		for (int cont = 0; cont < 10; cont++) {
+			int valorInformado = Integer.parseInt(JOptionPane.showInputDialog("Informe o " + (cont + 1) + "º valor de 10 números: "));
+			
+			if (valorInformado % 2 == 0) {
+				qntPar++; somaPar = somaPar + valorInformado;} 
+			else {qntImpar++; somaImpar = somaImpar + valorInformado;
+			}
+
+		}
+		String msgPar = "Quantidade de números pares: " + qntPar + " que somados resultam no seguinte valor: " + somaPar;
+		String msgImpar = "Quantidade de números ímpares: " + qntImpar + " que somados resultam no seguinte valor: " + somaImpar;
+		JOptionPane.showMessageDialog(null, msgPar, "Resumo dos números pares", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, msgImpar, "Resumo dos números ímpares", JOptionPane.INFORMATION_MESSAGE);
+		
+	}
+}

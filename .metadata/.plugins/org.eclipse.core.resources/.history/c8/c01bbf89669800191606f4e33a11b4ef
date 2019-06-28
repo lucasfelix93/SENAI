@@ -1,0 +1,22 @@
+//Faça uma solução que alimente um vetor com 10 valores inteiros entre 0 e 50 e também que solicite ao usuário a entrada de dados de um valor
+//inteiro qualquer. A solução deverá fazer uma busca do valor, informado pelo usuário, no vetor e imprima a posição em que este
+//foi encontrado ou se não foi encontrado.
+
+import java.lang.ArrayIndexOutOfBoundsException;
+import javax.swing.JOptionPane;
+import java.util.Random;
+public class Exercicio05 {
+	
+	public static void main(String[] args) {
+		
+		int[] array = new int[10];
+		Random random = new Random();
+		int cont = 0;
+		for (cont=0; cont < array.length; cont++); {
+		array[cont] = 10 + random.nextInt(50);
+		System.out.println(array[cont]);
+			
+	}
+
+}
+}

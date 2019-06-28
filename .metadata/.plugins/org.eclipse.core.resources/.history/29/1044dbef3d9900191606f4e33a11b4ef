@@ -1,0 +1,39 @@
+
+//Faça um programa que carregue os valores das vendas de uma loja no primeiro
+//semestre de 2018. Considere para tal, uma matriz [6,4], sendo que são 06 meses e 04
+//semanas por mês. Ao final, mostre na tela:
+//- Total de vendas do semestre
+//-Total vendido em cada mês
+
+import javax.swing.JOptionPane;
+
+public class Exercicio06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int array[][] = new int[6][4];
+		int somaMes[] = new int[6];
+		int vendasSemestre = 0;
+
+		String msg01 = "Informe os valores semanais das vendas de uma loja ao longo do primeiro semestre de 2018";
+
+		for (int contI = 0; contI < array.length; contI++) {
+			for (int contJ = 0; contJ < array[contI].length; contJ++) {
+				array[contI][contJ] = Integer.parseInt(JOptionPane
+						.showInputDialog("Informe o valor das vendas da" + contJ + "ª semana do mês" + contI));
+			}
+		}
+		for (int contI = 0; contI < array.length; contI++) {
+			for (int contJ = 0; contJ < array[contI].length; contJ++) {
+				somaMes[contI] += array[contI][contJ]; // a variável somaMes incrementa (por causa do comando +=) os valores dentro da matriz array em casa posição (linha, coluna)
+			}
+			vendasSemestre += somaMes[contI]; // a variavel VendasSemestre recebe e soma com o valor que há dentro dela
+
+		}
+		for (int contI = 0; contI < array.length; contI++) {
+			JOptionPane.showMessageDialog(null, "O total de vendas do "+ contI +"º mês foi de RS" + somaMes[contI]);
+		}
+
+	}
+
+}
